@@ -15,10 +15,13 @@
 		    background-repeat: no-repeat;
 		}
 		#banner1{
-			background-image: url('../comercio/img/purple.jpg');
+			background-image: url('../img/purple.jpg');
+			border-radius: 45px
 		}
 		#banner2{
-			background-image: url('../comercio/img/main.jpg');
+			padding: 2%;
+			background-image: url('../img/main.jpg');
+			border-radius: 45px
 		}
 
 		.boton {
@@ -30,7 +33,7 @@
 		    background-color: #2EE1F0; /* Color de fondo del botón */
 		    color: #000000; /* Color del texto del botón */
 		    border: none; /* Elimina el borde */
-		    border-radius: 5px; /* Añade bordes redondeados */
+		    border-radius: 15px; /* Añade bordes redondeados */
 		    cursor: pointer; /* Cambia el cursor al pasar por encima */
 		}
 
@@ -49,80 +52,100 @@
 		#card1{
 			background-color: #162FBD;
 		}
+		#text1{
+			margin-top: 150px;
+		}
+		#boton1{
+			margin-top: 70px; /* Centra verticalmente */
+			margin-left: 90px; /* Centra horizontalmente */
+			transform: translate(-50%, -50%); /* Centra completamente */
+			padding: 10px 20px; /* Ajusta el tamaño del botón según tus necesidades */
+			background-color: #2EE1F0; /* Color de fondo del botón */
+			color: #000000; /* Color del texto del botón */
+			border: none; /* Elimina el borde */
+			border-radius: 15px; /* Añade bordes redondeados */
+			cursor: pointer; 
+		}
+		#img1{
+			margin-top: 100px;
+			border-radius: 45px
+
+		}
+		body{
+			background-color: #000;
+			margin: 0;
+		}
+		header {
+		  background-color: #333; /* Color de fondo de la barra de navegación */
+		  display: flex;
+		  align-items: center;
+		  justify-content: space-between;
+		  padding: 20px;
+		  border-bottom: 15px solid white; /* Línea blanca debajo de la barra de navegación */
+		}
+		.logo img {
+		  max-height: 50px; /* Ajusta la altura de tu logo según sea necesario */
+		}
+
+		nav ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		}
+
+		nav ul li {
+		  display: inline;
+		}
+
+		nav ul li a {
+		  color: white; /* Color del texto del enlace */
+		  text-decoration: none;
+		  padding: 10px 20px; /* Espacio alrededor del texto del enlace */
+		  transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+		}
+
+		nav ul li a:hover {
+		  background-color: #555; /* Color de fondo cuando el enlace está en hover */
+		}
+
 	</style>
 </head>
 <header>
-	<nav class="navbar bg-body-tertiary fixed-top">
-	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#"><img src="../comercio/img/logoblanco.png"></a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-	      <div class="offcanvas-header">
-	        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Codeman</h5>
-	        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-	      </div>
-	      <div class="offcanvas-body">
-	        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-	          <li class="nav-item">
-	            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" href="#">Quienes somos?</a>
-	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" href="#">Contacto</a>
-	          </li>   
-	        </ul>
-	      </div>
-	    </div>
-	  </div>
-	</nav>
+    <div class="logo">
+      <img src="../img/logo.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 </header>
 <body>
-<div class="container">
-	<h4>Expertos en arquitectar, desarrollar e implementar soluciones de software</h4>
-<section class="mi_section" id="banner2">
-	<p></p>
-	<button class="boton">Mi Botón</button>
-
-</section>
-<br>
-<section>
-	<article id="card1">
-		<h4>Confía en nosotros para llevar tus ideas al siguiente nivel tecnológico y potenciar
-		el crecimiento de tu negocio.
-	</h4>
-	</article>
-</section>
-<br>
-<section>
-	<div class="row">
-		<div class="col-sm-6" id="card1">
-			<h4>
-				Enfoque de negocios
-			</h4>
-			<p>
-				Nos enfocamos en incrementar las ventas, nuestra automatización está diseñada para agilizar la operación y poder reducir costos.
-			</p>
-			<img class="img-thumbnail" src="../comercio/img/crecim.jpg">
-		</div>
-		<div class="col-sm-6" id="card1">
-			<h4>
-				Un aliado estrategico
-			</h4>
-			<p>
-				Te acompañamos en cada paso del proceso, desde diseñar una solución tecnológica hasta su implementación.
-			</p>
-			<img class="img-thumbnail" src="../comercio/img/contact.webp">
-		</div>
+	<div class="container">
+		<section class="mi_section" id="banner2">
+			<button class="boton">Mi Botón</button>
+		</section>
+		<section>
+			<div class="row">
+				<div class="col-sm-6">
+					<h4 id="text1">Expertos en arquitectar, desarrollar e implementar soluciones de software</h>					
+					<button id="boton1">Mi Botón</button>
+				</div>
+				<div class="col-sm-3">
+					<img id="img1" class="img-thumbnail" src="../img/hardware.jpg">
+				</div>
+				<div class="col-sm-3">
+					<img id="img1" class="img-thumbnail" src="../img/setup.jpg">
+				</div>
+			</div>
+		</section>
+		<section class="mi_section" id="banner1">
+		    <button class="boton">Mi Botón</button>
+		</section>
 	</div>
-</section>
-<br>
-<section class="mi_section" id="banner1">
-    <button class="boton">Mi Botón</button>
-</section>
-</div>
 </body>
 </html>
